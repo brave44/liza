@@ -1,0 +1,1288 @@
+@charset "UTF-8";
+/**
+* Template Style
+*
+* [Table of contents]
+*   1 Bootstrap Framework
+*     1.1  Normalize
+*     1.2  Glyphicons
+*     1.3  Scaffolding
+*     1.4  Type
+*     1.5  Code
+*     1.6  Tables
+*     1.7  Forms
+*     1.8  Buttons
+*     1.9  Grids
+*     1.10 Component animations
+*     1.11 Dropdowns
+*     1.12 Button Groups
+*     1.13 Input Groups
+*     1.14 Navs
+*     1.15 Navbar
+*     1.16 Breadcrumbs
+*     1.17 Pagination
+*     1.18 Pager
+*     1.19 Labels
+*     1.20 Badges
+*     1.21 Jumbotron
+*     1.22 Thumbnails
+*     1.23 Alerts
+*     1.24 Progress bars
+*     1.25 Media
+*     1.26 List Group
+*     1.27 Panels
+*     1.28 Responsive Embed
+*     1.29 Wells
+*     1.30 Close
+*     1.31 Modals
+*     1.32 Tooltip
+*     1.33 Popovers
+*     1.34 Carousel
+*     1.35 Utilities
+*     1.36 Responsive Utilities
+*
+*   2 Bootstrap Toolkit Styles
+*     2.1  Reset
+*     2.2  Flex Grid System
+*     2.3  Responsive Text System
+*     2.4  Responsive Pulls System
+*     2.5  Responsive Visibility System
+*     2.6  Bootstrap Grid Addons
+*     2.7  Dividers
+*     2.8  Type Addons
+*     2.9  Buttons Addons
+*     2.10 Buttons Effects
+*     2.11 Dropdowns Addons
+*     2.12 Sections
+*     2.13 Font Awesome
+*     2.14 Flaticon
+*     2.15 Material Design Icons
+*     2.16 Thumbnail Addons
+*     2.17 Wells Addons
+*     2.18 Scaffolding Addons
+*     2.19 Text Alignment System
+*     2.20 Text Styling System
+*     2.21 Navs Addons
+*     2.22 Navbar Addons
+*     2.23 Panels Addons
+*     2.24 Icons
+*     2.25 Progress Bars Addons
+*     2.26 Media Addons
+*     2.27 List Groups Addons
+*     2.28 Breadcrumbs Addons
+*     2.29 Input Groups Addons
+*     2.30 Dropcaps
+*     2.31 Alerts Addons
+*     2.32 Animations Addons
+*     2.33 Groups
+*     2.34 Comment Boxes
+*     2.35 Quotes
+*     2.36 Pagination Addons
+*     2.37 Pager Addons
+*     2.38 Labels Addons
+*     2.39 Posts
+*     2.40 Form Addons
+*     2.41 Offsets
+*     2.42 Responsive Units
+*     2.43 Icon Boxes
+*     2.44 Floating Groups
+*     2.45 Pricing and Plans
+*     2.46 Tables Addons
+*     2.47 Stacktables
+*     2.48 Text Rotators
+*     2.49 Jumbotron Addons
+*     2.50 Shop Toolbar
+*     2.51 Shop Product
+*     2.52 Badges Addons
+*     2.53 Member Boxes
+*     2.54 Context Styling
+*     2.55 Page Loaders
+*
+*   3 Plugins
+*     3.1  RD Navbar
+*     3.2  RD Twitterfeed
+*     3.3  RD Instafeed
+*     3.4  RD Search
+*     3.5  RD Video
+*     3.6  RD Parallax
+*     3.7  RD Flickrfeed
+*     3.8  Swiper Slider
+*     3.9  Animate
+*     3.10 Scroll To
+*     3.11 Counter
+*     3.12 Owl Carousel
+*     3.13 Isotope
+*     3.14 Photoswipe
+*     3.15 Responsive Tabs
+*     3.16 RD Google Maps
+*     3.17 Select 2
+*     3.18 FS Stepper
+*     3.19 Countdown
+*     3.20 RD Audio Player
+*     3.21 RD Video Player
+*     3.22 RD Event Calendar
+*     3.23 RD Facebook Feed
+*     3.24 Soundcloud Player
+*     3.25 Material Datetime Picker
+*     3.26 ToTop Button
+*     3.27 RD Material Tabs
+*     3.28 Material Parallax
+*/
+/** 1 Bootstrap Framework */
+/** 1.1  Normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+figure,
+header,
+main,
+section {
+    display: block;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    a[href^="#"]:after {
+        content: "";
+    }
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
+
+/** 1.2  Glyphicons */
+
+/** 1.3  Scaffolding */
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #434345;
+    background-color: #191919;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/** 1.4  Type */
+h1 {
+    font-family: "Amatic SC", cursive;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h1 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+p {
+    margin: 0 0 12px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-primary {
+    color: #545479;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+blockquote {
+    padding: 12px 24px;
+    margin: 0 0 24px;
+    font-size: 18.75px;
+    border-left: 5px solid #f2f4f9;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/** 1.5  Code */
+
+/** 1.6  Tables */
+
+/** 1.7  Forms */
+
+/** 1.8  Buttons */
+
+/** 1.9  Grids */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+/** 1.10 Component animations */
+
+/** 1.11 Dropdowns */
+
+/** 1.12 Button Groups */
+
+/** 1.13 Input Groups */
+
+/** 1.14 Navs */
+
+/** 1.15 Navbar */
+
+/** 1.16 Breadcrumbs */
+
+/** 1.17 Pagination */
+
+/** 1.18 Pager */
+
+/** 1.19 Labels */
+
+/** 1.20 Badges */
+
+/** 1.21 Jumbotron */
+
+/** 1.22 Thumbnails */
+
+/** 1.23 Alerts */
+
+/** 1.24 Progress bars */
+
+/** 1.25 Media */
+
+/** 1.26 List Group */
+
+/** 1.27 Panels */
+
+/** 1.28 Responsive Embed */
+
+/** 1.29 Wells */
+
+/** 1.30 Close */
+
+/** 1.31 Modals */
+
+/** 1.32 Tooltip */
+
+
+/** 1.34 Carousel */
+
+/** 1.35 Utilities */
+
+/** 1.36 Responsive Utilities */
+@-ms-viewport {
+    width: device-width;
+}
+
+/** 2 Bootstrap Toolkit Styles */
+/** 2.1  Reset */
+html *:first-child {
+    margin-top: 0;
+}
+
+html *:last-child {
+    margin-bottom: 0;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/** 2.2  Flex Grid System */
+.shell {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.shell {
+    min-width: 300px;
+    max-width: 480px;
+}
+
+@media (min-width: 768px) {
+    .shell {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .shell {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .shell {
+        max-width: 1200px;
+    }
+}
+
+.range {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+[class*="cell-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+* + .range {
+    margin-top: 50px;
+}
+
+* + [class*='cell-'] {
+    margin-top: 30px;
+}
+
+.range-condensed {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.range-condensed > [class*='cell'] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.range-condensed > * + [class*='cell'] {
+    margin-top: 0;
+}
+
+@media (min-width: 480px) {
+    .range {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .range > [class*='cell'] {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    * + [class*='cell-xs-'] {
+        margin-top: 0;
+    }
+    .range-xs-center {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .range-xs-right {
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .range > .cell-xs-4 {
+        -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+        max-width: 33.33333%;
+    }
+    .range > .cell-xs-10 {
+        -ms-flex-preferred-size: 83.33333%;
+        flex-basis: 83.33333%;
+        max-width: 83.33333%;
+    }
+    .range > .cell-xs-12 {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    * + [class*='cell-sm-'] {
+        margin-top: 0;
+    }
+    .range > .cell-sm-5 {
+        -ms-flex-preferred-size: 41.66667%;
+        flex-basis: 41.66667%;
+        max-width: 41.66667%;
+    }
+    .range > .cell-sm-7 {
+        -ms-flex-preferred-size: 58.33333%;
+        flex-basis: 58.33333%;
+        max-width: 58.33333%;
+    }
+    .range > .cell-sm-8 {
+        -ms-flex-preferred-size: 66.66667%;
+        flex-basis: 66.66667%;
+        max-width: 66.66667%;
+    }
+}
+
+@media (min-width: 992px) {
+    * + [class*='cell-md-'] {
+        margin-top: 0;
+    }
+    .range > .cell-md-push-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .range > .cell-md-5 {
+        -ms-flex-preferred-size: 41.66667%;
+        flex-basis: 41.66667%;
+        max-width: 41.66667%;
+    }
+    .range > .cell-md-6 {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .range > .cell-md-7 {
+        -ms-flex-preferred-size: 58.33333%;
+        flex-basis: 58.33333%;
+        max-width: 58.33333%;
+    }
+}
+
+/** 2.3  Responsive Text System */
+@media (min-width: 480px) {
+    .text-xs-left {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-sm-left {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-md-left {
+        text-align: left;
+    }
+}
+
+/** 2.4  Responsive Pulls System */
+
+/** 2.5  Responsive Visibility System */
+
+@media (min-width: 768px) {
+    .reveal-sm-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .reveal-md-inline-block {
+        display: inline-block !important;
+    }
+}
+
+/** 2.6  Bootstrap Grid Addons */
+
+/** 2.7  Dividers*/
+
+/** 2.8  Type Addons */
+
+.font-default {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 26px;
+    margin-bottom: 21px;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        line-height: 1.2;
+        font-size: 45px;
+    }
+}
+
+p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+@media (min-width: 480px) {
+    .big {
+        font-size: 106.25%;
+        line-height: 1.470588235294118;
+    }
+    h1 .big {
+        font-size: 137%;
+        line-height: 1.125;
+    }
+}
+
+@media (min-width: 992px) {
+    .big {
+        font-size: 106.25%;
+        line-height: 1.470588235294118;
+    }
+    h1 .big {
+        font-size: 200%;
+        line-height: 1.125;
+    }
+}
+
+.bg-lightest {
+    background: #f7f7f7;
+    fill: #f7f7f7;
+}
+
+.bg-safety-orange {
+    background: #55d4a6;
+    fill: #55d4a6;
+}
+
+.bg-white {
+    background: #fff;
+    fill: #fff;
+}
+
+.page .text-primary {
+    color: #545479;
+}
+
+.page blockquote.quote .text-darker,
+.page .text-darker {
+    color: #434345;
+}
+
+/** 2.9  Buttons Addons */
+
+/** 2.10 Buttons Effects */
+
+/** 2.11 Dropdowns Addons */
+
+/** 2.12 Sections */
+.section-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.section-34 {
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.section-98 {
+    padding-top: 98px;
+    padding-bottom: 98px;
+}
+
+@media (min-width: 768px) {
+    .section-sm-66 {
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+    .section-sm-110 {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+}
+
+.section-top-66 {
+    padding-top: 66px;
+}
+
+@media (min-width: 992px) {
+    .section-md-top-34 {
+        padding-top: 34px;
+    }
+    .section-md-top-124 {
+        padding-top: 124px;
+    }
+}
+
+.section-bottom-0 {
+    padding-bottom: 0;
+}
+
+.section-bottom-66 {
+    padding-bottom: 66px;
+}
+
+@media (min-width: 992px) {
+    .section-md-bottom-0 {
+        padding-bottom: 0;
+    }
+}
+
+/** 2.13 Font Awesome */
+
+/** 2.14 Flaticon */
+
+/** 2.15 Material Design Icons */
+
+/** 2.16 Thumbnail Addons */
+.thumbnail-classic {
+    position: relative;
+    display: block;
+}
+
+.thumbnail-classic img {
+    width: 100%;
+    height: auto;
+    transition: .35s;
+    will-change: transform;
+}
+
+.thumbnail-classic > img {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail-classic:hover {
+    z-index: 1;
+}
+
+.thumbnail-classic:hover > img {
+    box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    will-change: contents;
+}
+
+/** 2.17 Wells Addons */
+
+/** 2.18 Scaffolding Addons */
+.page {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/** 2.19 Text Alignment System */
+
+.page .text-center {
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    html:not(.lt-ie10) .page .text-xs-left {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    html:not(.lt-ie10) .page .text-sm-left {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    html:not(.lt-ie10) .page .text-md-left {
+        text-align: left;
+    }
+}
+
+/** 2.20 Text Styling System */
+
+.page .text-normal {
+    font-style: normal;
+}
+
+.page .text-bold {
+    font-weight: 700;
+}
+
+/** 2.21 Navs Addons */
+
+/** 2.22 Navbar Addons */
+
+/** 2.23 Panels Addons */
+
+/** 2.24 Icons */
+
+/** 2.25 Progress Bars Addons */
+
+/** 2.26 Media Addons */
+
+/** 2.27 List Groups Addons */
+
+/** 2.28 Breadcrumbs Addons */
+
+/** 2.29 Input Groups Addons */
+
+/** 2.30 Dropcaps */
+
+/** 2.31 Alerts Addons */
+
+/** 2.32 Animations Addons */
+
+/** 2.33 Groups */
+
+/** 2.34 Comment Boxes */
+
+/** 2.35 Quotes */
+.quote {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.quote-classic {
+    text-align: left;
+    position: relative;
+}
+
+.quote-classic q {
+    quotes: none;
+}
+
+.quote-classic .quote-body {
+    padding: 20px 20px 40px;
+}
+
+.quote-classic .quote-body:before {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: -1;
+    font-family: Font Awesome\ 5 Free;
+    font-size: 28px;
+    line-height: 54px;
+    color: #f2f4f9;
+    content: "\f10e";
+    font-weight: 900;
+}
+
+.quote-classic .quote-author {
+    margin-bottom: 4px;
+}
+
+.quote-classic > * {
+    position: relative;
+    z-index: 1;
+}
+
+.quote-classic-boxed .quote-body {
+    padding: 24px 20px 24px 27px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 100px 0 rgba(0, 0, 0, 0.15);
+}
+
+.quote-classic-boxed .quote-author {
+    padding-right: 24px;
+    display: block;
+    text-align: right;
+}
+
+.quote-classic-boxed:before {
+    top: 4px;
+    right: 4px;
+    left: auto;
+    -webkit-transform: none;
+    transform: none;
+}
+
+/** 2.36 Pagination Addons */
+
+/** 2.37 Pager Addons */
+
+/** 2.38 Labels Addons */
+
+/** 2.39 Posts */
+
+/** 2.40 Form Addons */
+
+/** 2.41 Offsets */
+
+@media (min-width: 992px) {
+    html .page .inset-md-right-80 {
+        padding-right: 80px;
+    }
+}
+
+html .page .offset-top-0 {
+    margin-top: 0;
+}
+
+html .page .offset-top-30 {
+    margin-top: 30px;
+}
+
+html .page .offset-top-50 {
+    margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+    html .page .offset-md-top-0 {
+        margin-top: 0;
+    }
+    html .page .offset-md-top-30 {
+        margin-top: 30px;
+    }
+    html .page .offset-md-top-50 {
+        margin-top: 50px;
+    }
+}
+
+/** 2.42 Responsive Units */
+.unit {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.unit-body {
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+.unit {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.unit > [class*='unit-']:first-child {
+    padding-top: 0;
+}
+
+@media (min-width: 992px) {
+    .unit-md {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .unit-md > [class*='unit-']:first-child {
+        padding-top: 0;
+    }
+    .unit-md-horizontal {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
+/** 2.43 Icon Boxes */
+
+/** 2.44 Floating Groups */
+
+/** 2.45 Pricing and Plans */
+
+/** 2.46 Tables Addons */
+
+/** 2.47 Stacktables */
+
+/** 2.48 Text Rotators */
+
+/** 2.49 Jumbotron Addons */
+
+/** 2.50 Shop Toolbar */
+
+/** 2.51 Shop Product */
+
+/** 2.52 Badges Addons */
+
+/** 2.53 Member Boxes */
+
+/** 2.54 Context Styling */
+
+.context-dark, .context-dark h1 {
+    color: #fff;
+}
+
+/** 2.55 Page Loaders */
+
+/** 3 Plugins */
+/** 3.1  RD Navbar */
+/*
+* @subsection   RD Navbar Mixins
+*
+* @description  Describes style declarations for RD Navbar Mixins
+*/
+.rd-navbar-top-panel.rd-navbar-static {
+    transition: 0.3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav > li > a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: none;
+}
+
+.rd-navbar {
+    display: none;
+    position: relative;
+    z-index: 99999;
+    text-align: left;
+}
+
+.rd-navbar ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.rd-navbar a {
+    transition: .3s all ease;
+}
+
+.rd-navbar-static {
+    display: block;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav:before, .rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav:after {
+    content: " ";
+    display: table;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav:after {
+    clear: both;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav > li {
+    float: left;
+    position: relative;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav > li > a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav > li + li {
+    margin-left: 10px;
+}
+
+.rd-navbar-top-panel.rd-navbar-light.rd-navbar-static .rd-navbar-nav > li a {
+    color: #212121;
+}
+
+.rd-navbar-top-panel.rd-navbar-light.rd-navbar-static .rd-navbar-nav > li > a:hover {
+    color: #fff;
+    background: #55d4a6;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-menu-wrap {
+    float: right;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-inner {
+    transition: .3s all ease;
+    position: relative;
+    text-align: left;
+    padding: 0;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-inner:before, .rd-navbar-top-panel.rd-navbar-static .rd-navbar-inner:after {
+    content: " ";
+    display: table;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-inner:after {
+    clear: both;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav-wrap {
+    transition: .3s all ease;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav-wrap {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav-wrap:before, .rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav-wrap:after {
+    content: " ";
+    display: table;
+}
+
+.rd-navbar-top-panel.rd-navbar-static .rd-navbar-nav-wrap:after {
+    clear: both;
+}
+
+.rd-navbar-top-panel.rd-navbar-light {
+    background: #fff;
+}
+
+/** 3.2  RD Twitterfeed */
+
+/** 3.3  RD Instafeed */
+
+/** 3.4  RD Search */
+
+/** 3.5  RD Video */
+
+/** 3.6  RD Parallax */
+
+/** 3.7  RD Flickrfeed */
+
+/** 3.8  Swiper Slider */
+
+/* a11y */
+
+/* IE10 Windows Phone 8 Fixes */
+
+/* Arrows */
+
+/* Pagination Styles */
+
+/* 3D Container */
+
+/* Coverflow */
+
+/* Fade */
+
+/* Cube */
+
+/* Scrollbar */
+
+/* Preloader */
+
+/** 3.9  Animate */
+
+/** 3.10 Scroll To */
+
+/** 3.11 Count To */
+
+/** 3.12 Owl Carousel */
+
+/** 3.13 Isotope */
+
+/** 3.14 Photoswipe */
+
+/* style is added when JS option showHideOpacity is set to true */
+
+/*
+	Background is added as a separate element.
+	As animating opacity is much faster than animating rgba() background-color.
+*/
+
+/* Prevent selection and tap highlights */
+
+/*
+	stretched thumbnail or div placeholder element (see below)
+	style is added to avoid flickering in webkit/blink when layers overlap
+*/
+
+/*
+	div element that matches size of large image
+	large image loads on top of it
+*/
+
+/*
+	Error message appears when image is not loaded
+	(JS option errorMsg controls markup)
+*/
+
+/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
+/*
+
+	Contents:
+
+	1. Buttons
+	2. Share modal and links
+	3. Index indicator ("1 of X" counter)
+	4. Caption
+	5. Loading indicator
+	6. Additional styles (root element, top bar, idle state, hidden state, etc.)
+
+*/
+/*
+
+	1. Buttons
+
+ */
+/* <button> css reset */
+
+/* pswp__ui--over-close class it added when mouse is over element that should close gallery */
+
+@media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
+    /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
+}
+
+/* no arrows on touch screens */
+
+/*
+	Arrow buttons hit area
+	(icon is added to :before pseudo-element)
+*/
+
+/*
+
+	2. Share modal/popup and links
+
+ */
+
+/* increase size of share links on touch devices */
+
+/*
+
+	3. Index indicator ("1 of X" counter)
+
+ */
+
+/*
+
+	4. Caption
+
+ */
+
+/* Fake caption element, used to calculate height of next/prev image */
+
+/*
+
+	5. Loading indicator (preloader)
+
+	You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
+
+ */
+
+.parallax-content {
+    position: relative;
+    z-index: 1;
+    background-color: #55d4a6;
+}
