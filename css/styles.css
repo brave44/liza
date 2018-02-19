@@ -292,6 +292,10 @@ p {
     text-transform: uppercase;
 }
 
+.text-underline {
+    text-decoration: underline;
+}
+
 .text-primary {
     color: #545479;
 }
@@ -590,6 +594,9 @@ a:focus {
     .text-xs-left {
         text-align: left;
     }
+    .text-xs-justify {
+        text-align: justify;
+    }
 }
 
 @media (min-width: 768px) {
@@ -674,6 +681,13 @@ p {
 .bg-lightest {
     background: #f7f7f7;
     fill: #f7f7f7;
+}
+
+.bg-darkest {
+    background: #5eeab8;
+    fill: #5eeab8;
+
+    color: #fff;
 }
 
 .bg-safety-orange {
@@ -1286,3 +1300,13 @@ html .page .offset-top-50 {
     z-index: 1;
     background-color: #55d4a6;
 }
+
+.info {
+    font-size: 134%;
+}
+    .info__item {
+        margin: 0 1em;
+    }
+        .info__item .icon {
+            opacity: .5;
+        }
