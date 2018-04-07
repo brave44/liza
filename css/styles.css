@@ -323,6 +323,32 @@ blockquote p:last-child {
 /** 1.7  Forms */
 
 /** 1.8  Buttons */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 1px solid;
+    transition: .3s all ease;
+}
+.btn--donate {
+    padding: 1em 2em;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #545479;
+    border: .1em solid #545479;
+    border-radius: 2em;
+    box-shadow: 0 0 0 .2em rgba(84, 84, 121, 0.3);
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+    .btn--donate:hover {
+        box-shadow: 0 0 0 .1em rgba(84, 84, 121, 0.3);
+    }
+    .btn--donate:active {
+        box-shadow: 0 0 0 0 rgba(84, 84, 121, 0.3);
+    }
 
 /** 1.9  Grids */
 .container {
@@ -1068,7 +1094,7 @@ html .page .offset-top-50 {
 .rd-navbar {
     display: none;
     position: relative;
-    z-index: 99999;
+    z-index: 5;
     text-align: left;
 }
 
@@ -1294,6 +1320,36 @@ html .page .offset-top-50 {
 	You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
 
  */
+.dl-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+dd, dt {
+    line-height: 1.2;
+}
+dd {
+    margin-left: 0;
+}
+dt {
+    font-weight: 700;
+}
+
+.dl-horizontal dt {
+    width: 30%;
+    clear: left;
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+.dl-horizontal dd {
+    width: 70%;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
 
 .parallax-content {
     position: relative;
@@ -1305,8 +1361,63 @@ html .page .offset-top-50 {
     font-size: 134%;
 }
     .info__item {
-        margin: 0 1em;
+        margin: auto 1em !important;
+    }
+    @media (max-width: 767px) {
+        .info__item {
+            width: 100%;
+            margin: 1em 0 !important;
+        }
     }
         .info__item .icon {
             opacity: .5;
+        }
+
+
+.modal {
+    display: none;
+    z-index: 9997;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: opacity 0.15s;
+    overflow: scroll;
+    pointer-events: all;
+    opacity: 1;
+    background: rgba(0, 0, 0, .6);
+}
+    .modal__inner {
+        position: relative;
+        background: #fff;
+        width: 75%;
+        max-width: 1000px;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .modal__box {
+        padding: 2em;
+    }
+    .modal__title {
+        font-size: 1.2em;
+        margin: .5em 0 2em;
+        text-align: center;
+    }
+    .modal__close {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font: 600 36px/36px 'Times New Roman', Arial, serif;
+        color: #545479;
+        text-decoration: none;
+        z-index: 100;
+        opacity: .5;
+        transition: .3s all ease;
+    }
+        .modal__close:hover {
+            opacity: 1;
         }

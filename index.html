@@ -1,331 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="keywords" content="">
-    <meta name="date" content="Feb 15">
-    <title>Благотворительный фонд им. Е.П. Глинки "Доктор Лиза" </title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="keywords" content="">
+  <meta name="date" content="Feb 15">
+  <title>Благотворительный фонд им. Е.П. Глинки "Доктор Лиза"</title>
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Amatic+SC" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="css/styles.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Amatic+SC" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="css/styles.min.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
 </head>
+
 <body>
-    <div class="page text-center">
-        <header class="page-head">
-            <div class="rd-navbar-wrap">
-                <div class="rd-navbar rd-navbar-top-panel rd-navbar-light rd-navbar-static">
-                    <div class="rd-navbar-inner">
-                        <div class="container section-relative">
-                            <div class="rd-navbar-menu-wrap">
-                                <div class="rd-navbar-nav-wrap">
-                                    <div class="rd-navbar-mobile-scroll">
-                                        <ul class="rd-navbar-nav">
-                                            <li><a href="#goals"><span>Цели</span></a></li>
-                                            <li><a href="#tasks"><span>Задачи</span></a></li>
-                                            <li><a href="#program"><span>Программы фонда</span></a></li>
-                                            <li><a href="#team"><span>Команда</span></a></li>
-                                            <li><a href="#work"><span>Деятельность</span></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <div class="page text-center">
+    <header class="page-head">
+      <div class="rd-navbar-wrap">
+        <div class="rd-navbar rd-navbar-top-panel rd-navbar-light rd-navbar-static">
+          <div class="rd-navbar-inner">
+            <div class="container section-relative">
+              <div class="rd-navbar-menu-wrap">
+                <div class="rd-navbar-nav-wrap">
+                  <div class="rd-navbar-mobile-scroll">
+                    <ul class="rd-navbar-nav">
+                      <li>
+                        <a href="#goals">
+                          <span>Цели</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#tasks">
+                          <span>Задачи</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#program">
+                          <span>Программы фонда</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#team">
+                          <span>Команда</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#work">
+                          <span>Деятельность</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" onclick="showModal('requisites')">
+                          <span>Реквизиты фонда</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </header>
+          </div>
+        </div>
+      </div>
+    </header>
 
-        <main class="page-content">
-            <section class="context-dark">
-                <div class="section parallax-container">
-                    <div class="parallax-content">
-                        <div class="bg-overlay-info">
-                            <div class="shell section-34 section-sm-66">
-                                <div class="reveal-sm-block reveal-md-inline-block">
-                                    <h1 class="text-bold text-center">Благотворительный фонд<br/> им. Елизаветы Глинки<br/> <span class="big">«ДОКТОР ЛИЗА»</span></h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <main class="page-content">
+      <section class="context-dark">
+        <div class="section parallax-container">
+          <div class="parallax-content">
+            <div class="bg-overlay-info">
+              <div class="shell section-34 section-sm-66">
+                <div class="reveal-sm-block reveal-md-inline-block">
+                  <h1 class="text-bold text-center">Благотворительный фонд
+                    <br/> им. Елизаветы Глинки
+                    <br/>
+                    <span class="big">«ДОКТОР ЛИЗА»</span>
+                  </h1>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="info bg-darkest">
-                <div class="shell section-34">
-                    <div class="range range-xs-center">
-                        <div class="info__item text-primary">
-                            <svg class="icon" data-prefix="far" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="16"><path fill="currentColor" d="M476.536 22.921L382.288 1.18c-21.6-4.984-43.609 6.185-52.339 26.556l-43.5 101.492c-7.982 18.626-2.604 40.598 13.081 53.43l40.016 32.741c-28.537 52.375-71.771 95.609-124.147 124.147l-32.741-40.015c-12.832-15.685-34.804-21.063-53.43-13.081L27.736 329.949C7.365 338.68-3.804 360.691 1.18 382.287l21.742 94.25C27.74 497.417 46.072 512 67.5 512 312.347 512 512 313.731 512 67.5c0-21.429-14.583-39.761-35.464-44.579zM69.289 463.996l-20.921-90.669 98.212-42.091 55.716 68.094c98.805-46.353 150.588-98.036 197.036-197.035l-68.097-55.715 42.092-98.212 90.669 20.921c-.947 217.588-177.09 393.755-394.707 394.707z"></path></svg>
-                            <a class="big" href="tel:+79265319028">+7 (926) 531-90-28</a>
-                        </div>
-                        <div class="info__item text-primary">
-                            <svg class="icon" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="16"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
-                            <a class="big" href="mailto:info@liza.fund">info@liza.fund</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section class="info bg-darkest">
+        <div class="shell section-34">
+          <div class="range range-xs-center">
+            <div class="info__item text-primary">
+              <svg class="icon" data-prefix="far" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                width="18" height="16">
+                <path fill="currentColor" d="M476.536 22.921L382.288 1.18c-21.6-4.984-43.609 6.185-52.339 26.556l-43.5 101.492c-7.982 18.626-2.604 40.598 13.081 53.43l40.016 32.741c-28.537 52.375-71.771 95.609-124.147 124.147l-32.741-40.015c-12.832-15.685-34.804-21.063-53.43-13.081L27.736 329.949C7.365 338.68-3.804 360.691 1.18 382.287l21.742 94.25C27.74 497.417 46.072 512 67.5 512 312.347 512 512 313.731 512 67.5c0-21.429-14.583-39.761-35.464-44.579zM69.289 463.996l-20.921-90.669 98.212-42.091 55.716 68.094c98.805-46.353 150.588-98.036 197.036-197.035l-68.097-55.715 42.092-98.212 90.669 20.921c-.947 217.588-177.09 393.755-394.707 394.707z"></path>
+              </svg>
+              <a class="big" href="tel:+79265319028">+7 (926) 531-90-28</a>
+            </div>
+            <div class="info__item text-primary">
+              <button class="btn btn--donate" id="donate">Пожертвовать</button>
+            </div>
+            <div class="info__item text-primary">
+              <svg class="icon" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="16">
+                <path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
+              </svg>
+              <a class="big" href="mailto:info@liza.fund">info@liza.fund</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="section-34 section-sm-66 section-bottom-66 bg-lightest" id="goals">
-                <div class="shell">
-                    <div class="range range-xs-center">
-                        <div class="cell xs-8 cell-sm-7">
-                            <!-- Boxed Testimonials-->
-                            <blockquote class="quote quote-classic quote-classic-boxed">
-                                <div class="quote-body bg-white text-darker">
-                                    <p>
-                                        <q>Одна инокиня сказала: "Милостыня - это свобода". Я считаю это главным в работе нашего фонда. Нам одинаково дороги и наши пациенты, и те, кто согласился дать им милостыню. Потому что любая помощь нашим подопечным - бесценна. Любая. Мы пытаемся помочь тем, кому не поможет уже никто. Вне зависимости от вероисповедания, происхождения, и социального статуса.</q>
-                                    </p>
-                                </div>
-                                <div class="quote-author text-uppercase text-bold font-default">
-                                    <cite class="text-normal">Елизавета Глинка</cite>
-                                </div>
-                            </blockquote>
-                        </div>
-                    </div>
+      <section class="section-34 section-sm-66 section-bottom-66 bg-lightest" id="goals">
+        <div class="shell">
+          <div class="range range-xs-center">
+            <div class="cell xs-8 cell-sm-7">
+              <blockquote class="quote quote-classic quote-classic-boxed">
+                <div class="quote-body bg-white text-darker">
+                  <p>
+                    <q>Одна инокиня сказала: "Милостыня - это свобода". Я считаю это главным в работе нашего фонда. Нам одинаково
+                      дороги и наши пациенты, и те, кто согласился дать им милостыню. Потому что любая помощь нашим подопечным
+                      - бесценна. Любая. Мы пытаемся помочь тем, кому не поможет уже никто. Вне зависимости от вероисповедания,
+                      происхождения, и социального статуса.</q>
+                  </p>
                 </div>
-                <div class="shell section-top-66">
-                    <div class="range">
-                        <div class="cell-xs-12 cell-sm-7 cell-md-7 offset-top-50 offset-md-top-0 text-sm-left">
-                            <h1 class="text-bold text-primary">Цели фонда</h1>
-                            <p class="text-xs-justify">Наша организация создана для оказания помощи людям, по разным причинам оказавшимся в трудной жизненной ситуации, а также попавшим в беду из-за войн, стихийных бедствий, эпидемий и катастроф, для объединения усилий добровольцев, представителей НКО и органов власти, СМИ и экспертов для решения задач фонда и эффективной работы его программ на принципах, которыми руководствовалась в своей работе Елизавета Глинка - Доктор Лиза.</p>
-                        </div>
-                        <div class="cell-xs-12 cell-sm-5 cell-md-5 offset-top-50 offset-md-top-0">
-                            <figure class="thumbnail-classic">
-                                <img width="900" height="600" src="img/1.jpg" alt="">
-                            </figure>
-                        </div>
-                    </div>
+                <div class="quote-author text-uppercase text-bold font-default">
+                  <cite class="text-normal">Елизавета Глинка</cite>
                 </div>
-            </section>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="shell section-top-66">
+          <div class="range">
+            <div class="cell-xs-12 cell-sm-7 cell-md-7 offset-top-50 offset-md-top-0 text-sm-left">
+              <h1 class="text-bold text-primary">Цели фонда</h1>
+              <p class="text-xs-justify">Наша организация создана для оказания помощи людям, по разным причинам оказавшимся в трудной жизненной ситуации,
+                а также попавшим в беду из-за войн, стихийных бедствий, эпидемий и катастроф, для объединения усилий добровольцев,
+                представителей НКО и органов власти, СМИ и экспертов для решения задач фонда и эффективной работы его программ
+                на принципах, которыми руководствовалась в своей работе Елизавета Глинка - Доктор Лиза.</p>
+            </div>
+            <div class="cell-xs-12 cell-sm-5 cell-md-5 offset-top-50 offset-md-top-0">
+              <figure class="thumbnail-classic">
+                <img width="900" height="600" src="img/1.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="section-md-top-124 section-md-bottom-0 section-98" id="tasks">
-                <div class="shell">
-                    <div class="range">
-                        <div class="cell xs-12">
-                            <div class="text-center">
-                                <h1 class="text-bold text-primary">Задачи фонда</h1>
-                                <svg height="13" viewBox="0 0 71 13" width="71" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                    <path class="bg-safety-orange" d="M 65.591797,0.39453125 C 64.632414,0.55512546 63.656631,1.037019 62.839844,1.9121094 l 2.009765,1.875 c 0.987119,-1.0575807 1.464926,-0.9055776 2.074219,-0.5703125 0.609293,0.335265 1.125342,1.2616345 1.144531,1.6152343 C 68.111503,5.6270437 67.786283,6.2015228 66.951172,6.875 66.116061,7.5484772 64.791442,8.161997 63.316406,8.6230469 60.366335,9.5451467 56.822431,9.9000923 55.357422,9.9453125 49.487597,10.126495 41.515727,8.2106051 34.380859,5.9648438 30.873861,4.8609863 26.209294,2.9728751 21.335938,1.7480469 16.462581,0.52321864 11.317182,-0.07967759 6.7734375,1.6503906 l -0.025391,0.00977 -0.025391,0.00977 C 4.3944177,2.6636873 2.6199428,4.0438286 1.515625,5.5957031 0.41130724,7.1475776 -0.0588551,9.0257429 0.7265625,10.642578 c 0.735964,1.515031 2.2978692,2.250647 3.6972656,2.234375 1.3993964,-0.01627 2.7415813,-0.606444 3.6738281,-1.679687 L 6.0214844,9.3945312 C 5.6678168,9.8016889 4.967102,10.122226 4.3925781,10.128906 3.8180543,10.135587 3.4724885,10.00395 3.1992188,9.4414062 2.9754025,8.9806654 3.024638,8.2170231 3.7558594,7.1894531 4.4839472,6.1662866 5.8567444,5.037042 7.78125,4.2109375 c 3.674744,-1.3881932 8.271853,-0.9562457 12.884766,0.203125 4.624565,1.1622992 9.200779,3.012418 12.890625,4.1738281 7.258822,2.2847774 15.360414,4.3068544 21.884765,4.1054684 1.739141,-0.05368 5.355814,-0.40149 8.695313,-1.445312 1.669749,-0.521911 3.270286,-1.207639 4.541015,-2.232422 C 69.948464,7.990842 70.909328,6.4678364 70.8125,4.6835938 70.724917,3.0697107 69.754257,1.63739 68.248047,0.80859375 67.494942,0.39419565 66.55118,0.23393704 65.591797,0.39453125 Z"></path>
-                                </svg>
-                            </div>
-                            <div class="range offset-top-0">
-                                <div class="offset-top-50">
-                                    <div class="unit unit-md unit-md-horizontal text-xs-justify">
-                                        <div class="unit-body">
-                                            <p>Aдресная и целевая помощь социально незащищенным гражданам, людям, оказавшимся в трудной жизненной ситуации, бездомным, в том числе, социальная реабилитация.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="offset-top-50 offset-md-top-30">
-                                    <div class="unit unit-md unit-md-horizontal text-xs-justify">
-                                        <div class="unit-body">
-                                            <p>Оказание медицинской, социальной, материальной, психологической и духовной помощи паллиативным пациентам и больным, нуждающимся в постоянном уходе, а также создание в месте нахождения пациента максимально здоровой и комфортной обстановки, улучшение качества жизни больного и его близких.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="offset-top-50 offset-md-top-30">
-                                    <div class="unit unit-md unit-md-horizontal text-xs-justify">
-                                        <div class="unit-body">
-                                            <p>Оказание гуманитарной, медицинской и другой благотворительной помощи детям и семьям с детьми, оказавшимся в кризисных ситуациях, в том числе в условиях военных конфликтов, стихийных бедствий, катастроф, эпидемий, бедности.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="offset-top-50 offset-md-top-30">
-                                    <div class="unit unit-md unit-md-horizontal text-xs-justify">
-                                        <div class="unit-body">
-                                            <p>Адресная помощь медицинским, социальным и реабилитационным учреждениям, основанным при участии Е.П. Глинки, носящим ее имя, или использующими ее методы и подходы в работе с больными и нуждающимися.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="offset-top-50 offset-md-top-30">
-                                    <div class="unit unit-md unit-md-horizontal text-xs-justify">
-                                        <div class="unit-body">
-                                            <p>Выполнение просветительской работы в целях распространения информации о принципах, правилах и подходах в работе с нуждающимися, которые соблюдала в своей работе Елизавета Глинка, сохранение ее архивов и методик, создание обучающих программ и материалов.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <section class="section-md-top-124 section-md-bottom-0 section-98" id="tasks">
+        <div class="shell">
+          <div class="range">
+            <div class="cell xs-12">
+              <div class="text-center">
+                <h1 class="text-bold text-primary">Задачи фонда</h1>
+                <svg height="13" viewBox="0 0 71 13" width="71" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <path class="bg-safety-orange" d="M 65.591797,0.39453125 C 64.632414,0.55512546 63.656631,1.037019 62.839844,1.9121094 l 2.009765,1.875 c 0.987119,-1.0575807 1.464926,-0.9055776 2.074219,-0.5703125 0.609293,0.335265 1.125342,1.2616345 1.144531,1.6152343 C 68.111503,5.6270437 67.786283,6.2015228 66.951172,6.875 66.116061,7.5484772 64.791442,8.161997 63.316406,8.6230469 60.366335,9.5451467 56.822431,9.9000923 55.357422,9.9453125 49.487597,10.126495 41.515727,8.2106051 34.380859,5.9648438 30.873861,4.8609863 26.209294,2.9728751 21.335938,1.7480469 16.462581,0.52321864 11.317182,-0.07967759 6.7734375,1.6503906 l -0.025391,0.00977 -0.025391,0.00977 C 4.3944177,2.6636873 2.6199428,4.0438286 1.515625,5.5957031 0.41130724,7.1475776 -0.0588551,9.0257429 0.7265625,10.642578 c 0.735964,1.515031 2.2978692,2.250647 3.6972656,2.234375 1.3993964,-0.01627 2.7415813,-0.606444 3.6738281,-1.679687 L 6.0214844,9.3945312 C 5.6678168,9.8016889 4.967102,10.122226 4.3925781,10.128906 3.8180543,10.135587 3.4724885,10.00395 3.1992188,9.4414062 2.9754025,8.9806654 3.024638,8.2170231 3.7558594,7.1894531 4.4839472,6.1662866 5.8567444,5.037042 7.78125,4.2109375 c 3.674744,-1.3881932 8.271853,-0.9562457 12.884766,0.203125 4.624565,1.1622992 9.200779,3.012418 12.890625,4.1738281 7.258822,2.2847774 15.360414,4.3068544 21.884765,4.1054684 1.739141,-0.05368 5.355814,-0.40149 8.695313,-1.445312 1.669749,-0.521911 3.270286,-1.207639 4.541015,-2.232422 C 69.948464,7.990842 70.909328,6.4678364 70.8125,4.6835938 70.724917,3.0697107 69.754257,1.63739 68.248047,0.80859375 67.494942,0.39419565 66.55118,0.23393704 65.591797,0.39453125 Z"></path>
+                </svg>
+              </div>
+              <div class="range offset-top-0">
+                <div class="offset-top-50">
+                  <div class="unit unit-md unit-md-horizontal text-xs-justify">
+                    <div class="unit-body">
+                      <p>Aдресная и целевая помощь социально незащищенным гражданам, людям, оказавшимся в трудной жизненной
+                        ситуации, бездомным, в том числе, социальная реабилитация.</p>
                     </div>
-                    <div class="range range-xs-right">
-                        <div class="cell xs-12 cell-sm-5">
-                            <!-- Boxed Testimonials-->
-                            <blockquote class="quote quote-classic quote-classic-boxed">
-                                <div class="quote-body bg-white text-darker">
-                                    <p>
-                                        <q>Жалей. Не о прошлом, не о несбывшемся, жалей тех, кому, видит Бог, много хуже, чем тебе.</q>
-                                    </p>
-                                </div>
-                                <div class="quote-author text-uppercase text-bold font-default">
-                                    <cite class="text-normal">Елизавета Глинка</cite>
-                                </div>
-                            </blockquote>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+                <div class="offset-top-50 offset-md-top-30">
+                  <div class="unit unit-md unit-md-horizontal text-xs-justify">
+                    <div class="unit-body">
+                      <p>Оказание медицинской, социальной, материальной, психологической и духовной помощи паллиативным пациентам
+                        и больным, нуждающимся в постоянном уходе, а также создание в месте нахождения пациента максимально
+                        здоровой и комфортной обстановки, улучшение качества жизни больного и его близких.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-top-50 offset-md-top-30">
+                  <div class="unit unit-md unit-md-horizontal text-xs-justify">
+                    <div class="unit-body">
+                      <p>Оказание гуманитарной, медицинской и другой благотворительной помощи детям и семьям с детьми, оказавшимся
+                        в кризисных ситуациях, в том числе в условиях военных конфликтов, стихийных бедствий, катастроф,
+                        эпидемий, бедности.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-top-50 offset-md-top-30">
+                  <div class="unit unit-md unit-md-horizontal text-xs-justify">
+                    <div class="unit-body">
+                      <p>Адресная помощь медицинским, социальным и реабилитационным учреждениям, основанным при участии Е.П.
+                        Глинки, носящим ее имя, или использующими ее методы и подходы в работе с больными и нуждающимися.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-top-50 offset-md-top-30">
+                  <div class="unit unit-md unit-md-horizontal text-xs-justify">
+                    <div class="unit-body">
+                      <p>Выполнение просветительской работы в целях распространения информации о принципах, правилах и подходах
+                        в работе с нуждающимися, которые соблюдала в своей работе Елизавета Глинка, сохранение ее архивов
+                        и методик, создание обучающих программ и материалов.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="range range-xs-right">
+            <div class="cell xs-12 cell-sm-5">
+              <blockquote class="quote quote-classic quote-classic-boxed">
+                <div class="quote-body bg-white text-darker">
+                  <p>
+                    <q>Жалей. Не о прошлом, не о несбывшемся, жалей тех, кому, видит Бог, много хуже, чем тебе.</q>
+                  </p>
+                </div>
+                <div class="quote-author text-uppercase text-bold font-default">
+                  <cite class="text-normal">Елизавета Глинка</cite>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
 
-                <div class="range range-condensed section-md-top-34" data-photo-swipe-gallery="gallery">
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/2.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/3.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/4.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </section>
+        <div class="range range-condensed section-md-top-34" data-photo-swipe-gallery="gallery">
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/2.jpg" alt="">
+            </figure>
+          </div>
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/3.jpg" alt="">
+            </figure>
+          </div>
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/4.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
 
-            <section class="section-md-top-124 section-md-bottom-0 section-98 bg-lightest" id="program">
-                <div class="shell">
-                    <div class="range range-xs-center">
-                        <div class="cell-xs-10 cell-md-6 text-xs-left inset-md-right-80 cell-md-push-1 offset-top-50 offset-md-top-0">
-                            <h1 class="text-bold text-primary">Программы фонда</h1>
-                            <div class="offset-top-30 offset-md-top-50">
-                                <p>Помощь неизлечимо и тяжелобольным людям.</p>
-                                <p>Помощь малоимущим, социально незащищенным гражданам и бездомным.</p>
-                                <p>Помощь детям (и семьям с детьми) пострадавшим в результате военных действий и катастроф.</p>
-                                <p>Помощь детям, пострадавшим от насилия или жестокого обращения.</p>
-                            </div>
-                        </div>
-                        <div class="cell-xs-10 cell-md-6 text-xs-left inset-md-right-80 cell-md-push-1 offset-top-50 offset-md-top-0">
-                            <h1 class="text-bold text-primary">Основные принципы работы фонда</h1>
-                            <div class="offset-top-30 offset-md-top-50">
-                                <p>Адресность и индивидуальный подход к нуждам подопечных.</p>
-                                <p>Безвозмездность и беспристрастность.</p>
-                                <p>Честность, ответственность и профессиональный подход к работе с подопечными.</p>
-                                <p>Уважение человеческого достоинства, сострадание и этичность.</p>
-                                <p>Открытость, взаимодействие, диалог и сотрудничество - с добровольцами, партнерами, благотворителями и СМИ.</p>
-                            </div>
-                        </div>
-                    </div>
+      <section class="section-md-top-124 section-md-bottom-0 section-98 bg-lightest" id="program">
+        <div class="shell">
+          <div class="range range-xs-center">
+            <div class="cell-xs-10 cell-md-6 text-xs-left inset-md-right-80 cell-md-push-1 offset-top-50 offset-md-top-0">
+              <h1 class="text-bold text-primary">Программы фонда</h1>
+              <div class="offset-top-30 offset-md-top-50">
+                <p>Помощь неизлечимо и тяжелобольным людям.</p>
+                <p>Помощь малоимущим, социально незащищенным гражданам и бездомным.</p>
+                <p>Помощь детям (и семьям с детьми) пострадавшим в результате военных действий и катастроф.</p>
+                <p>Помощь детям, пострадавшим от насилия или жестокого обращения.</p>
+              </div>
+            </div>
+            <div class="cell-xs-10 cell-md-6 text-xs-left inset-md-right-80 cell-md-push-1 offset-top-50 offset-md-top-0">
+              <h1 class="text-bold text-primary">Основные принципы работы фонда</h1>
+              <div class="offset-top-30 offset-md-top-50">
+                <p>Адресность и индивидуальный подход к нуждам подопечных.</p>
+                <p>Безвозмездность и беспристрастность.</p>
+                <p>Честность, ответственность и профессиональный подход к работе с подопечными.</p>
+                <p>Уважение человеческого достоинства, сострадание и этичность.</p>
+                <p>Открытость, взаимодействие, диалог и сотрудничество - с добровольцами, партнерами, благотворителями и СМИ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="range range-condensed section-md-top-34" data-photo-swipe-gallery="gallery">
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/5.jpg" alt="">
+            </figure>
+          </div>
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/6.jpg" alt="">
+            </figure>
+          </div>
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/7.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="shell section-top-66  section-bottom-66">
+          <div class="range range-xs-center">
+            <div class="cell xs-8 cell-sm-7">
+              <blockquote class="quote quote-classic quote-classic-boxed">
+                <div class="quote-body bg-white text-darker">
+                  <p>
+                    <q>Я больше врач или общественный деятель? Ни то, ни другое. Потому что то, что я делаю, это, по сути, санитарская
+                      работа, тяжелый физический труд. Я себя оцениваю наравне со своими добровольцами, как члена одной команды,
+                      которая пытается сделать небольшое, но очень важное дело.</q>
+                  </p>
                 </div>
-                <div class="range range-condensed section-md-top-34" data-photo-swipe-gallery="gallery">
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/5.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/6.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/7.jpg" alt="">
-                        </figure>
-                    </div>
+                <div class="quote-author text-uppercase text-bold font-default">
+                  <cite class="text-normal">Елизавета Глинка</cite>
                 </div>
-                <div class="shell section-top-66  section-bottom-66">
-                    <div class="range range-xs-center">
-                        <div class="cell xs-8 cell-sm-7">
-                            <!-- Boxed Testimonials-->
-                            <blockquote class="quote quote-classic quote-classic-boxed">
-                                <div class="quote-body bg-white text-darker">
-                                    <p>
-                                        <q>Я больше врач или общественный деятель? Ни то, ни другое. Потому что то, что я делаю, это, по сути, санитарская работа, тяжелый физический труд. Я себя оцениваю наравне со своими добровольцами, как члена одной команды, которая пытается сделать небольшое, но очень важное дело.</q>
-                                    </p>
-                                </div>
-                                <div class="quote-author text-uppercase text-bold font-default">
-                                    <cite class="text-normal">Елизавета Глинка</cite>
-                                </div>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </section>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="section-34 section-sm-66 section-bottom-66" id="team">
-                <div class="shell section-top-66">
-                    <div class="range">
-                        <div class="cell-xs-12 cell-sm-5 cell-md-5 offset-top-50 offset-md-top-0">
-                            <figure class="thumbnail-classic">
-                                <img width="900" height="600" src="img/8.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="cell-xs-12 cell-sm-7 cell-md-7 offset-top-50 offset-md-top-0 text-sm-left">
-                            <h1 class="text-bold text-primary">Команда фонда</h1>
-                            <p>Наш фонд объединил людей, многие годы работавших с Елизаветой Глинкой и разделяющих ее принципы и методы в работе с подопечными, а также ее друзей и близких, всех тех, кто хочет сохранить и распространить опыт работы Доктора Лизы и ее подход к благотворительной деятельности максимально широко на пользу нуждающимся.</p>
-                        </div>
-                    </div>
+      <section class="section-34 section-sm-66 section-bottom-66" id="team">
+        <div class="shell section-top-66">
+          <div class="range">
+            <div class="cell-xs-12 cell-sm-5 cell-md-5 offset-top-50 offset-md-top-0">
+              <figure class="thumbnail-classic">
+                <img width="900" height="600" src="img/8.jpg" alt="">
+              </figure>
+            </div>
+            <div class="cell-xs-12 cell-sm-7 cell-md-7 offset-top-50 offset-md-top-0 text-sm-left">
+              <h1 class="text-bold text-primary">Команда фонда</h1>
+              <p>Наш фонд объединил людей, многие годы работавших с Елизаветой Глинкой и разделяющих ее принципы и методы в
+                работе с подопечными, а также ее друзей и близких, всех тех, кто хочет сохранить и распространить опыт работы
+                Доктора Лизы и ее подход к благотворительной деятельности максимально широко на пользу нуждающимся.</p>
+            </div>
+          </div>
+        </div>
+        <div class="shell section-top-66">
+          <div class="range range-xs-center">
+            <div class="cell xs-8 cell-sm-7">
+              <blockquote class="quote quote-classic quote-classic-boxed">
+                <div class="quote-body bg-white text-darker">
+                  <p>
+                    <q>Меня часто спрашивают: почему я помогаю тем, кому помогаю? Всем этим странным, страшным людям. Отвечаю:
+                      «Потому что они тоже люди. Других причин нет». Попрекать куском хлеба нельзя никого — даже бездомного.
+                      Вернее, бездомного в особенности. Надо сделать дело — и забыть об этом. Даже если меня обманывают.
+                      Лучше я покормлю того, кто и так не очень голодный, чем случайно откажу тому, кому на самом деле нечего
+                      есть.
+                    </q>
+                  </p>
                 </div>
-                <div class="shell section-top-66">
-                    <div class="range range-xs-center">
-                        <div class="cell xs-8 cell-sm-7">
-                            <!-- Boxed Testimonials-->
-                            <blockquote class="quote quote-classic quote-classic-boxed">
-                                <div class="quote-body bg-white text-darker">
-                                    <p>
-                                        <q>Меня часто спрашивают: почему я помогаю тем, кому помогаю? Всем этим странным, страшным людям. Отвечаю: «Потому что они тоже люди. Других причин нет».
-                                            Попрекать куском хлеба нельзя никого — даже бездомного. Вернее, бездомного в особенности. Надо сделать дело — и забыть об этом. Даже если меня обманывают. Лучше я покормлю того, кто и так не очень голодный, чем случайно откажу тому, кому на самом деле нечего есть.</q>
-                                    </p>
-                                </div>
-                                <div class="quote-author text-uppercase text-bold font-default">
-                                    <cite class="text-normal">Елизавета Глинка</cite>
-                                </div>
-                            </blockquote>
-                        </div>
-                    </div>
+                <div class="quote-author text-uppercase text-bold font-default">
+                  <cite class="text-normal">Елизавета Глинка</cite>
                 </div>
-            </section>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Our Teachers-->
-            <section class="section-98 section-sm-110 section-bottom-0 bg-lightest" id="work">
-                <div class="shell">
-                    <h1 class="text-bold text-primary">Описание деятельности</h1>
-                    <svg height="13" viewBox="0 0 71 13" width="71" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <path class="bg-safety-orange" d="M 65.591797,0.39453125 C 64.632414,0.55512546 63.656631,1.037019 62.839844,1.9121094 l 2.009765,1.875 c 0.987119,-1.0575807 1.464926,-0.9055776 2.074219,-0.5703125 0.609293,0.335265 1.125342,1.2616345 1.144531,1.6152343 C 68.111503,5.6270437 67.786283,6.2015228 66.951172,6.875 66.116061,7.5484772 64.791442,8.161997 63.316406,8.6230469 60.366335,9.5451467 56.822431,9.9000923 55.357422,9.9453125 49.487597,10.126495 41.515727,8.2106051 34.380859,5.9648438 30.873861,4.8609863 26.209294,2.9728751 21.335938,1.7480469 16.462581,0.52321864 11.317182,-0.07967759 6.7734375,1.6503906 l -0.025391,0.00977 -0.025391,0.00977 C 4.3944177,2.6636873 2.6199428,4.0438286 1.515625,5.5957031 0.41130724,7.1475776 -0.0588551,9.0257429 0.7265625,10.642578 c 0.735964,1.515031 2.2978692,2.250647 3.6972656,2.234375 1.3993964,-0.01627 2.7415813,-0.606444 3.6738281,-1.679687 L 6.0214844,9.3945312 C 5.6678168,9.8016889 4.967102,10.122226 4.3925781,10.128906 3.8180543,10.135587 3.4724885,10.00395 3.1992188,9.4414062 2.9754025,8.9806654 3.024638,8.2170231 3.7558594,7.1894531 4.4839472,6.1662866 5.8567444,5.037042 7.78125,4.2109375 c 3.674744,-1.3881932 8.271853,-0.9562457 12.884766,0.203125 4.624565,1.1622992 9.200779,3.012418 12.890625,4.1738281 7.258822,2.2847774 15.360414,4.3068544 21.884765,4.1054684 1.739141,-0.05368 5.355814,-0.40149 8.695313,-1.445312 1.669749,-0.521911 3.270286,-1.207639 4.541015,-2.232422 C 69.948464,7.990842 70.909328,6.4678364 70.8125,4.6835938 70.724917,3.0697107 69.754257,1.63739 68.248047,0.80859375 67.494942,0.39419565 66.55118,0.23393704 65.591797,0.39453125 Z"></path>
-                    </svg>
-                    <div class="range range-xs-center">
-                        <div class="cell-xs-10 cell-sm-8 text-justify">
-                            <p>Что может быть общего между этими людьми: донецким мальчиком с пороком сердца, видевшим войну; 20-летней талантливой пианисткой, умирающей от саркомы; московским бездомным с ужасными ранами на ногах, поющим песни красивым голосом среди крыс и мусора?</p>
-                            <p>Все эти люди в свое время пришли к Доктору Лизе за помощью.</p>
-                            <p>10 лет назад Елизавета Глинка вместе с добровольцами, благотворителями и помощниками основала Международную общественную организацию. Доктор Лиза все эти годы помогала тем, кто потерял надежду, тем, от кого отказались другие, тем, кому не поможет никто.</p>
-                            <p>Сытый бездомный с перебинтованными ногами. Хрупкая  Валя, обезболенная, и впервые за полгода сидящая за роялем. Мальчик из Донецка и его счастливые родители — он прооперирован и будет жить. Все эти люди ощутили, что они не одни в своем горе, что они нужны, что их любят. Благодаря труду Елизаветы Глинки, ее служению людям, таких историй - тысячи.</p>
-                            <p>Сейчас ее соратники, добровольцы, друзья и близкие сочли своим долгом не только продолжить дело Доктора Лизы, но и бережно сохранить тот опыт, который она передала, сохранить принципы ее работы, ее уникальный подход к подопечным и пациентам. Не только при непосредственной работе с нуждающимися, но и максимально широко распространить этот опыт среди добровольцев, представителей НКО, людей, только начинающих свой путь в благотворительности, среди тех, кто вдохновляется примером Доктора Лизы и продолжит ее дело.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="range range-condensed section-md-top-34" data-photo-swipe-gallery="gallery">
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/9.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/10.jpg" alt="">
-                        </figure>
-                    </div>
-                    <div class="cell-xs-4">
-                        <!-- Thumbnail Rayen-->
-                        <figure class="thumbnail-classic">
-                            <img width="900" height="600" src="img/11.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
-            </section>
-        </main>
+      <section class="section-98 section-sm-110 section-bottom-0 bg-lightest" id="work">
+        <div class="shell">
+          <h1 class="text-bold text-primary">Описание деятельности</h1>
+          <svg height="13" viewBox="0 0 71 13" width="71" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <path class="bg-safety-orange" d="M 65.591797,0.39453125 C 64.632414,0.55512546 63.656631,1.037019 62.839844,1.9121094 l 2.009765,1.875 c 0.987119,-1.0575807 1.464926,-0.9055776 2.074219,-0.5703125 0.609293,0.335265 1.125342,1.2616345 1.144531,1.6152343 C 68.111503,5.6270437 67.786283,6.2015228 66.951172,6.875 66.116061,7.5484772 64.791442,8.161997 63.316406,8.6230469 60.366335,9.5451467 56.822431,9.9000923 55.357422,9.9453125 49.487597,10.126495 41.515727,8.2106051 34.380859,5.9648438 30.873861,4.8609863 26.209294,2.9728751 21.335938,1.7480469 16.462581,0.52321864 11.317182,-0.07967759 6.7734375,1.6503906 l -0.025391,0.00977 -0.025391,0.00977 C 4.3944177,2.6636873 2.6199428,4.0438286 1.515625,5.5957031 0.41130724,7.1475776 -0.0588551,9.0257429 0.7265625,10.642578 c 0.735964,1.515031 2.2978692,2.250647 3.6972656,2.234375 1.3993964,-0.01627 2.7415813,-0.606444 3.6738281,-1.679687 L 6.0214844,9.3945312 C 5.6678168,9.8016889 4.967102,10.122226 4.3925781,10.128906 3.8180543,10.135587 3.4724885,10.00395 3.1992188,9.4414062 2.9754025,8.9806654 3.024638,8.2170231 3.7558594,7.1894531 4.4839472,6.1662866 5.8567444,5.037042 7.78125,4.2109375 c 3.674744,-1.3881932 8.271853,-0.9562457 12.884766,0.203125 4.624565,1.1622992 9.200779,3.012418 12.890625,4.1738281 7.258822,2.2847774 15.360414,4.3068544 21.884765,4.1054684 1.739141,-0.05368 5.355814,-0.40149 8.695313,-1.445312 1.669749,-0.521911 3.270286,-1.207639 4.541015,-2.232422 C 69.948464,7.990842 70.909328,6.4678364 70.8125,4.6835938 70.724917,3.0697107 69.754257,1.63739 68.248047,0.80859375 67.494942,0.39419565 66.55118,0.23393704 65.591797,0.39453125 Z"></path>
+          </svg>
+          <div class="range range-xs-center">
+            <div class="cell-xs-10 cell-sm-8 text-justify">
+              <p>Что может быть общего между этими людьми: донецким мальчиком с пороком сердца, видевшим войну; 20-летней талантливой
+                пианисткой, умирающей от саркомы; московским бездомным с ужасными ранами на ногах, поющим песни красивым
+                голосом среди крыс и мусора?</p>
+              <p>Все эти люди в свое время пришли к Доктору Лизе за помощью.</p>
+              <p>10 лет назад Елизавета Глинка вместе с добровольцами, благотворителями и помощниками основала Международную
+                общественную организацию. Доктор Лиза все эти годы помогала тем, кто потерял надежду, тем, от кого отказались
+                другие, тем, кому не поможет никто.</p>
+              <p>Сытый бездомный с перебинтованными ногами. Хрупкая Валя, обезболенная, и впервые за полгода сидящая за роялем.
+                Мальчик из Донецка и его счастливые родители — он прооперирован и будет жить. Все эти люди ощутили, что они
+                не одни в своем горе, что они нужны, что их любят. Благодаря труду Елизаветы Глинки, ее служению людям, таких
+                историй - тысячи.</p>
+              <p>Сейчас ее соратники, добровольцы, друзья и близкие сочли своим долгом не только продолжить дело Доктора Лизы,
+                но и бережно сохранить тот опыт, который она передала, сохранить принципы ее работы, ее уникальный подход
+                к подопечным и пациентам. Не только при непосредственной работе с нуждающимися, но и максимально широко распространить
+                этот опыт среди добровольцев, представителей НКО, людей, только начинающих свой путь в благотворительности,
+                среди тех, кто вдохновляется примером Доктора Лизы и продолжит ее дело.</p>
+            </div>
+          </div>
+        </div>
+        <div class="range range-condensed section-md-top-34" data-photo-swipe-gallery="gallery">
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/9.jpg" alt="">
+            </figure>
+          </div>
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/10.jpg" alt="">
+            </figure>
+          </div>
+          <div class="cell-xs-4">
+            <figure class="thumbnail-classic">
+              <img width="900" height="600" src="img/11.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="requisites">
+    <div class="modal__inner">
+      <div class="modal__box">
+        <a class="modal__close" href="#" onclick="hideModal('requisites')">×</a>
+        <h4 class="modal__title">РЕКВИЗИТЫ ФОНДА</h4>
+
+        <dl class="dl-horizontal">
+            <dt>Полное официальное наименование предприятия (для печатн. форм. докум.)</dt>
+            <dd>Благотворительный Фонд Им. Елизаветы Глинки "Доктор Лиза"</dd>
+
+            <dt>Сокращенное наименование предприятия</dt>
+            <dd>Фонд "Доктор Лиза"</dd>
+
+            <dt>Директор</dt>
+            <dd>Авилова Наталья Сергеевна</dd>
+
+            <dt>ИНН</dt>
+            <dd>7713456310</dd>
+
+            <dt>КПП</dt>
+            <dd>771301001</dd>
+
+            <dt>ОГРН</dt>
+            <dd>1187700004447</dd>
+
+            <dt>ОКПО</dt>
+            <dd>27360531</dd>
+
+            <dt>ОКОПФ</dt>
+            <dd>70401</dd>
+
+            <dt>ОКВЭД</dt>
+            <dd>4.99</dd>
+
+            <dt>Юридический адрес</dt>
+            <dd>127422, г. Москва, ул. Тимирязевская, д. 2/3 этаж/офис 3/306б</dd>
+
+            <dt>Номер расчетного счета</dt>
+            <dd>40702810501300012742</dd>
+
+            <dt>Наименование учреждения банка</dt>
+            <dd>АО "АЛЬФА-БАНК"</dd>
+
+            <dt>БИК</dt>
+            <dd>044525593</dd>
+
+            <dt>Тел. / факс</dt>
+            <dd>+79265319028</dd>
+
+            <dt>e-mail</dt>
+            <dd>info@liza.fund</dd>
+        </dl>
+      </div>
     </div>
+  </div>
+  <script>
+    function showModal(id) {
+      $('#' + id).show();
+    }
+    function hideModal(id) {
+      $('#' + id).hide();
+    }
+  </script>
+  <script>
+    var payHandler = function () {
+      var widget = new cp.CloudPayments();
+      widget.charge({
+        publicId: 'pk_d584993a34be378995830471135ea',
+        description: 'Помочь нашим подопечным',
+        amount: 100.00,
+        currency: 'RUB'
+      },
+        function (options) { // success
+
+        },
+        function (reason, options) { // fail
+
+        });
+    };
+    $("#donate").on("click", payHandler);
+  </script>
 </body>
+
 </html>
