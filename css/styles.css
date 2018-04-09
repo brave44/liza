@@ -1399,6 +1399,9 @@ dt {
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
     }
+    .modal__inner--donate {
+      width: 500px;
+    }
     .modal__box {
         padding: 2em;
     }
@@ -1421,3 +1424,10 @@ dt {
         .modal__close:hover {
             opacity: 1;
         }
+
+.amount {
+  font-size: 24px;
+  margin: 0 20px 0 0;
+  padding: 10px;
+  width: 50%;
+}
