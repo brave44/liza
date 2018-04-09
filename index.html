@@ -12,7 +12,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Amatic+SC" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link href="css/styles.min.css?1523218706713" rel="stylesheet">
+  <link href="css/styles.min.css?1523299903473" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
@@ -100,7 +100,7 @@
               <a class="big" href="tel:+79265319028">+7 (926) 531-90-28</a>
             </div>
             <div class="info__item text-primary">
-              <button class="btn btn--donate" id="donate">Пожертвовать</button>
+              <button class="btn btn--donate" onclick="showModal('donate')">Помочь фонду</button>
             </div>
             <div class="info__item text-primary">
               <svg class="icon" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="16">
@@ -389,6 +389,16 @@
       </section>
     </main>
   </div>
+  <div class="modal" id="donate">
+    <div class="modal__inner modal__inner--donate">
+      <div class="modal__box">
+        <a class="modal__close" href="#" onclick="hideModal('donate')">×</a>
+        <h4 class="modal__title">Помочь нашим подопечным</h4>
+        <input id="amount" class="amount" type="number" placeholder="Сумма (руб.)">
+        <button class="btn btn--donate" id="checkout">Пожертвовать</button>
+      </div>
+    </div>
+  </div>
 
   <div class="modal" id="requisites">
     <div class="modal__inner">
@@ -455,21 +465,22 @@
   </script>
   <script>
     var payHandler = function () {
+      var amount = parseFloat($('#amount').val());
       var widget = new cp.CloudPayments();
       widget.charge({
         publicId: 'pk_d584993a34be378995830471135ea',
         description: 'Помочь нашим подопечным',
-        amount: 100.00,
+        amount: amount,
         currency: 'RUB'
       },
         function (options) { // success
-
+          hideModal('donate');
         },
         function (reason, options) { // fail
-
+          hideModal('donate');
         });
     };
-    $("#donate").on("click", payHandler);
+    $("#checkout").on("click", payHandler);
   </script>
 </body>
 
