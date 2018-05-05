@@ -1370,6 +1370,7 @@ dt {
         }
     }
         .info__item .icon {
+            vertical-align: top;
             opacity: .5;
         }
 
@@ -1404,6 +1405,8 @@ dt {
     }
     .modal__box {
         padding: 2em;
+        max-height: 90vh;
+        overflow: auto;
     }
     .modal__title {
         font-size: 1.2em;
