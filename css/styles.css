@@ -1428,9 +1428,19 @@ dt {
             opacity: 1;
         }
 
-.amount {
+.amount, .email {
   font-size: 24px;
   margin: 0 20px 0 0;
   padding: 10px;
-  width: 50%;
+  width: 100%;
 }
+
+.donate-row {
+  margin-bottom: 10px;
+}
+  .donate-row .btn--donate {
+    margin: 0 30%;
+  }
+  .donate-row .email {
+    display: none;
+  }
