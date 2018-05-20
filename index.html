@@ -12,7 +12,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Amatic+SC" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link href="css/styles.min.css?1523299903473" rel="stylesheet">
+  <link href="css/styles.min.css?1526814232436" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
@@ -421,8 +421,20 @@
       <div class="modal__box">
         <a class="modal__close" href="#" onclick="hideModal('donate')">×</a>
         <h4 class="modal__title">Помочь нашим подопечным</h4>
-        <input id="amount" class="amount" type="number" placeholder="Сумма (руб.)">
-        <button class="btn btn--donate" id="checkout">Пожертвовать</button>
+        <div class="donate-row">
+          <input id="amount" class="amount" type="number" placeholder="Сумма (руб.)">
+        </div>
+        <div class="donate-row">
+          <label for="recurrent">
+            <input type="checkbox" id="recurrent" /> Включить ежемесячные платежи
+          </label>
+        </div>
+        <div class="donate-row">
+          <input id="email" class="email" type="text" required="" placeholder="E-mail адрес" />
+        </div>
+        <div class="donate-row">
+          <button class="btn btn--donate" id="checkout">Пожертвовать</button>
+        </div>
       </div>
     </div>
   </div>
@@ -677,14 +689,37 @@
     }
   </script>
   <script>
+    $("#recurrent").click(function () {
+      if ($('#recurrent').is(':checked')) {
+        $("#email").show();
+      } else {
+        $("#email").hide();
+      }
+    });
+
     var payHandler = function () {
-      var amount = parseFloat($('#amount').val());
       var widget = new cp.CloudPayments();
+
+      var data = {};
+      var auto = $('#recurrent').is(':checked');
+
+      if (auto) {
+        data.cloudPayments = {
+          recurrent: { interval: 'Month', period: 1 }
+        }
+      }
+
+      var amount = parseFloat($('#amount').val());
+      var accountId = $('#email').val();
+
       widget.charge({
         publicId: 'pk_d584993a34be378995830471135ea',
         description: 'Помочь нашим подопечным',
         amount: amount,
-        currency: 'RUB'
+        currency: 'RUB',
+        accountId: accountId,
+        email: accountId,
+        data: data
       },
         function (options) { // success
           hideModal('donate');
